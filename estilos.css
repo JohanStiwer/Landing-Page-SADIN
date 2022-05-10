@@ -35,10 +35,9 @@ html {
 
 
 section {
-    min-height: 100vh;
     padding: 0 9%;
-    padding-top: 7.5rem;
-    padding-bottom: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .btn {
@@ -208,7 +207,6 @@ header label {
 
 .features .box-container {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -278,8 +276,6 @@ header label {
   
 }
 
-
-
 .about .column .content {
     flex: 1 1 20rem;
 }
@@ -301,14 +297,7 @@ header label {
     text-decoration: none;
  list-style:none;
 }
-.aboutSadin .column .functions ul li {
 
-   font-size: 1.2rem;
-    color: #ffffff;
-    padding: 1rem 0;
-    text-decoration: none;
- list-style:none;
-}
 
 
 
@@ -360,11 +349,11 @@ header label {
 .aboutVentajas .column .content {
     flex: 1 0 20rem;
 }
-.aboutVentajas .column .advantage{
+.aboutVentajas .column .functions{
   padding-right:230px;
   }
 
-.aboutVentajas .column .advantage ul li {
+.aboutVentajas .column .functions ul li {
     font-size: 1.2rem;
     color: #f8f7f7;
     padding: 1rem 0;
@@ -647,7 +636,7 @@ header label {
 .footer p{
   margin-top: 5px;
   color: #ababab;
-  font-sise: 50px;
+  font-size: 20px;
   text-align: center;
 }
 /* media queries  */
@@ -747,7 +736,7 @@ header label {
     }
   
     .advantage{
-      margin-left: 50px;
+      margin-left: 70px;
     
       }
 
@@ -759,7 +748,7 @@ header label {
 
 @media (max-width:450px) {
 footer .txtlogo p{
-  padding-left: 18rem;
+  padding-left: 10rem;
 }
     html {
         font-size: 50%;
