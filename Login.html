@@ -19,54 +19,43 @@
       <div class="signin-signup">
         <form action="#" class="sign-in-form">
           <a href="index.html">
-          <img src="imgLogin/LogoHeader.svg" class="logo" alt="SADIN"></a>
+            <img src="imgLogin/LogoHeader.svg" class="logo" alt="SADIN"></a>
           <h2 class="title">Iniciar Sesión</h2>
-          <div class="input-field">
-            <i class="fas fa-user"></i>
-            <input type="text" placeholder="Usuario" />
+
+          <div class="form">
+            <div class="form__group">
+              <input type="text" id="user" class="form__input" placeholder=" " autocomplete="off">
+              <label for="user" class="form__label">Usuario</label>
+            </div>
+
+            <div class="form__group">
+              <input type="password" id="password" class="form__input" placeholder=" ">
+              <label for="password" class="form__label">Contraseña</label>
+            </div>
           </div>
 
-          
-          
-          <div class="input-field">
-            <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Contraseña" />
-          </div>
           <div class="g-recaptcha" data-sitekey="6LfRSNISAAAAAMfRc6rmKwWZbJQA2EdpoR2Rr0XA"></div>
-          <button class="btn solid" type="submit"> Ingresar  <i class="fas fa-angle-double-right"></i> </button>
+          <button class="btn solid" type="submit"> Ingresar <i class="fas fa-angle-double-right"></i> </button>
 
         </form>
         <section class="contact" id="contact">
 
-    <form action="">
-
-      <h1 class="heading">Contacto</h1>
-
-      <div class="inputBox">
-        <input type="usuario" required>
-        <label>Usuario</label>
-      </div>
-
-      <div class="inputBox">
-        <input type="password" required>
-        <label>Contraseña</label>
-      </div>
-
-    </form>
-
-  </section>
+        </section>
 
         <form action="#" class="sign-up-form">
           <a href="index.html">
-          <img src="imgLogin/LogoHeader.svg" class="logo" alt="SADIN"></a>
+            <img src="imgLogin/LogoHeader.svg" class="logo" alt="SADIN"></a>
           <h2 class="title">Registrate</h2>
-          <div class="input-field">
-            <i class="fas fa-user"></i>
-            <input type="text" placeholder="Número de documento" />
+
+          <div class="form">
+            <div class="form__group">
+              <input type="text" id="doc" class="form__input" placeholder=" " autocomplete="off">
+              <label for="doc" class="form__label">Número de Documento</label>
+            </div>
           </div>
 
-          <button class="btn solid" type="submit"> Registrarme  <i class="fas fa-angle-double-right"></i> </button>
-          
+          <button class="btn solid" type="submit"> Registrarme <i class="fas fa-angle-double-right"></i> </button>
+
         </form>
       </div>
     </div>
@@ -102,6 +91,7 @@
   </div>
 
   <script src="appLogin.js"></script>
+
 </body>
 
 </html>

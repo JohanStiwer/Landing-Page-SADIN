@@ -101,7 +101,9 @@
         </div>
         <img src="recursos/users.svg" alt="group">
         <h3>Usuarios</h3>
-        <p> Los usuarios, determinados funcionarios o administradores tienen varias funcionalidades, entre ellas están registrar, actualizar y eliminar información relacionada con los empleados. Por otro lado los usuarios externos van a poder solicitar certificados laborales generados inmediatamente.</p>
+        <p> Los usuarios, determinados funcionarios o administradores tienen varias funcionalidades, entre ellas están
+          registrar, actualizar y eliminar información relacionada con los empleados. Por otro lado los usuarios
+          externos van a poder solicitar certificados laborales generados inmediatamente.</p>
       </div>
 
       <div class="box">
@@ -165,7 +167,7 @@
         <ul>
           <li><i class="fas fa-check"></i> Agilidad para obtener certificados </li>
           <li><i class="fas fa-check"></i> Mejora del medio ambiente al no imprimir papel.</li>
-         
+
           <li><i class="fas fa-check"></i> Validez legal de nuestros certificados.</li>
 
         </ul>
@@ -180,38 +182,37 @@
 
   <!-- contact section starts  -->
 
+
   <section class="contact" id="contact">
 
     <div class="image">
       <img src="recursos/contactus.svg" alt="">
     </div>
 
-    <form action="">
+    <form action="" class="form">
 
-      <h1 class="heading">Contacto</h1>
 
-      <div class="inputBox">
-        <input type="text" required>
-        <label>Nombre</label>
-      </div>
+        <div class="form__group">
+          <input type="text" id="name" class="form__input" placeholder=" " autocomplete="off">
+          <label for="name" class="form__label">Nombre</label>
+        </div>
 
-      <div class="inputBox">
-        <input type="email" required>
-        <label>Correo Electrónico</label>
-      </div>
+        <div class="form__group">
+          <input type="text" id="email" class="form__input" placeholder=" ">
+          <label for="email" class="form__label">Correo Electrónico</label>
+        </div>
 
-      <div class="inputBox">
-        <input type="number" required>
-        <label>Teléfono</label>
-      </div>
+        <div class="form__group">
+          <input type="text" id="phone" class="form__input" placeholder=" ">
+          <label for="phone" class="form__label">Teléfono</label>
+        </div>
 
-      <div class="inputBox">
-        <textarea required name="" id="" cols="30" rows="10"></textarea>
-        <label>Mensaje</label>
-      </div>
+        <div class="form__group">
+          <textarea id="message" class="text__area" placeholder="Mensaje" cols="30" rows="10"></textarea>
+        </div>
+
 
       <input type="submit" class="btn" value="Enviar">
-
     </form>
 
   </section>
@@ -230,6 +231,16 @@
   </footer>
   <!-- footer section ends -->
 
+  <script>
+    const textarea = document.querySelector("textarea");
+    textarea.addEventListener("keyup", e => {
+      let scHeight = e.target.scrollheiht;
+      textarea.style.heught = "auto";
+      textarea.style.heught = `${scHeight}px`;
+    })
+    
+  </script>
+  
 </body>
 
 </html>
