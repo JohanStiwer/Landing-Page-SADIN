@@ -203,7 +203,7 @@ header label {
 }
 
 .features {
-    background-color: #333;
+    background-color: #fff;
 }
 
 .features .box-container {
@@ -225,7 +225,7 @@ header label {
 }
 
 .features .box-container .box img {
-    height: 1rem;
+    height: 15rem;
 }
 
 .features .box-container .box h3 {
