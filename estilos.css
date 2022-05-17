@@ -151,9 +151,9 @@ header label {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url() no-repeat;
+    background: #f1f1f1;
     background-size:  300px 100px;
-    background-position: top ;
+    background-position: top ;  
 }
 
 
@@ -203,7 +203,7 @@ header label {
 }
 
 .features {
-    background-color: #fff;
+    background-color: #f1f1f1;
 }
 
 .features .box-container {
@@ -263,10 +263,10 @@ header label {
 .aboutSadin .column .imageAbout {
     flex: 1 1 40rem;
 }
-.aboutSadin .column .imageAbout img {
-    width: 70%;
-  
-}
+  .aboutSadin .column .imageAbout img {
+      width: 70%;
+    
+  }
 .about .column .image {
     flex: 1 1 40rem;
 }
@@ -298,6 +298,38 @@ header label {
  list-style:none;
 }
 
+.aboutSadinCertificados{
+  background: #f1f1f1;
+}
+
+.aboutSadinCertificados .column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+ 
+}
+.aboutSadinCertificados .column .imageAbout {
+    flex: 1 1 40rem;
+}
+.aboutSadinCertificados .column .imageAbout img {
+    width: 70%;
+}	
+  
+.aboutSadinCertificados .column .content .buttons a:last-child {
+    margin-left: 2rem;
+}
+
+
+.aboutSadinCertificados .column .functions ul li {
+    font-size: 1.2rem;
+    color: #666;
+    padding: 1rem 0;
+    text-decoration: none;
+ list-style:none;
+}
+	
+
 
 
 
@@ -316,12 +348,6 @@ header label {
 
 
 
-.aboutVentajas {
-    background: #333;
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 3rem;
-}
 
 .content .contentText {
   font-family: 'Poppins',sans-serif;
@@ -329,53 +355,6 @@ header label {
 
 .contentText .images{
   width: 20px;
-}
-
-.aboutVentajas .column {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.aboutVentajas .column .imageventaja {
-    flex: 1 1 40rem;
-}
-
-.aboutVentajas .column .imageventaja img {
-     width: 50%;
-}
-
-.aboutVentajas .column .content {
-    flex: 1 0 20rem;
-}
-.aboutVentajas .column .functions{
-  padding-right:230px;
-  }
-
-.aboutVentajas .column .functions ul li {
-    font-size: 1.2rem;
-    color: #f8f7f7;
-    padding: 1rem 0;
-    text-decoration: none;
- list-style:none;
-}
-
-.aboutVentajas .column .content h3 {
-    font-size: 3rem;
-    color: #eee;
-}
-
-.aboutVentajas .column .content i {
-    font-size: 2rem;
-    color: #eee;
-    padding: 1rem 0;
-    text-decoration: none;
-
-}
-
-.aboutVentajas .column .content .buttons a:last-child {
-    margin-left: 2rem;
 }
 
 
@@ -563,12 +542,11 @@ header label {
 
 .contact .image img {
     width: 70%;
-    padding: 2rem;
 }
 
 .form {
     flex: 1 1 50rem;
-    padding: 5rem 15rem;
+    padding: 5rem 10rem;
     border: .1rem solid rgba(0, 0, 0, .2);
     box-shadow: 0 .1rem .1rem rgba(0, 0, 0, .1);
     border-radius: 1rem;
@@ -576,76 +554,154 @@ header label {
 }
 
 /* FORMULARIOS */
+.form__contact {
+    width: 24rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: white;
+  }
+  .form__groups {
+    position: relative;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  .form__inputs {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #cfd8dc;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-weight: inherit;
+    color: #2e2e2e;
+    outline: none;
+    padding: 2 1.25rem;
+    background: none;
+  }
+  .form__inputs:hover {
+    border-color: #fff99e;
+  }
+  .form__inputs:focus {
+    border-color: #e5ad34;
+  }
+  .form__labels {
+    position: absolute;
+    left: 1rem;
+    top: 0.9rem;
+    padding: 0 0.5rem;
+    background-color: white;
+    color: #8f8f8f;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  }
 
-.form__group {
-  position: relative;
-  height: 3rem;
-  margin-bottom: 1.5rem;
-}
-.form__input {
-  width: 60%;
-  height: 40px;
-  border: 2px solid #cfd8dc;
-  border-radius: 0.5rem;
-  font-family: inherit;
-  font-weight: inherit;
-  color: #2e2e2e;
-  outline: none;
-  padding: 1.25rem;
-  background: none;
-}
-.form__input:hover {
-  border-color: #fff99e;
-}
-.form__input:focus {
-  border-color: #e5ad34;
-}
-.form__label {
-  font-size: 16px;
-  position: absolute;
-  left: 1rem;
-  top: 0.9rem;
-  padding: 0 0.5rem;
-  color: #8f8f8f;
-  background-color: white;
-  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
-}
-
-
-
-.text__area {
-  resize: none;
-  height: 50px;
-  width: 60%;
-  border: 2px solid #cfd8dc;
-  border-radius: 0.5rem;
-  font-family: inherit;
-  font-weight: inherit;
-  color: #2e2e2e;
-  outline: none;
-  padding: 1.25rem;
-  background: none;
+  .form__textarea{
+    width: 100%;
+    height: 100px;
+    border: 2px solid #cfd8dc;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-weight: inherit;
+    color: #2e2e2e;
+    outline: none;
+    padding: 2 1.25rem;
+    background: none;
+    resize: none;
+    overflow: auto;
+  }
+  /* 
+  1. When the input is in the focus state
+  reduce the size of the label and move upwards 
   
+  2. Keep label state when content is in input field 
+  */
+  .form__inputs:focus ~ .form__labels,
+  .form__inputs:not(:placeholder-shown).form__inputs:not(:focus) ~ .form__labels {
+    top: -0.5rem;
+    left: 0.8rem;
+    font-size: 0.8rem;
+    color: #cc8100;
+  }
+
+  /* Animation textarea*/
+  .form__textarea:focus ~ .form__labels,
+  .form__textarea:not(:placeholder-shown).form__textarea:not(:focus) ~ .form__labels {
+    top: -0.5rem;
+    left: 0.8rem;
+    font-size: 0.8rem;
+    color: #cc8100;
+  }
+
+
+/* CONTACT */
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
 }
 
-.text__area:hover {
-  border-color: #fff99e;
+.contact .image {
+    flex: 1 1 20rem;
 }
-.text__area:focus {
-  border-color: #e5ad34;
-}
-/* 
-1. When the input is in the focus state
-reduce the size of the label and move upwards 
 
-2. Keep label state when content is in input field 
-*/
-.form__input:focus ~ .form__label,
-.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
-  top: -0.5rem;
-  left: 0.8rem;
-  font-size: 10px/*1rem*/;
-  color: #cc8100;
+.contact .image img {
+    width: 70%;
+    padding: 2rem;
+}
+
+.contact form {
+    flex: 1 1 35rem;
+    padding: 15rem 4rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    background: #fff;
+}
+
+.contact form .heading {
+    text-align: left;
+    padding: 0;
+    padding-bottom: 1rem;
+}
+
+.contact form .inputBox {
+    position: absolute;
+}
+
+.contact form .inputBox input,
+.contact form .inputBox textarea {
+    width: 100%;
+    background: none;
+    color: #666;
+    margin: 1.5rem 0;
+    padding: .5rem 0;
+    font-size: 1.7rem;
+    border-bottom: .1rem solid rgba(0, 0, 0, .1);
+    text-transform: none;
+}
+
+.contact form .inputBox textarea {
+    resize: none;
+    height: 13rem;
+}
+
+.contact form .inputBox label {
+    position: absolute;
+    top: 1.7rem;
+    left: 0;
+    font-size: 1.7rem;
+    color: #666;
+    transition: .2s linear;
+}
+
+.contact form .inputBox input:focus~label,
+.contact form .inputBox input:valid~label,
+.contact form .inputBox textarea:focus~label,
+.contact form .inputBox textarea:valid~label {
+    top: -.5rem;
+    font-size: 1.5rem;
+    color: var(--pink);
 }
 /*Footer*/
 .footer {
