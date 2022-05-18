@@ -556,7 +556,7 @@ header label {
 /* FORMULARIOS */
 .form__contact {
     width: 24rem;
-    padding: 2rem;
+    padding: 4rem;
     border-radius: 1rem;
     background-color: white;
   }
@@ -567,15 +567,16 @@ header label {
   }
   .form__inputs {
     width: 100%;
-    height: 100%;
+    height: 4rem;
     border: 2px solid #cfd8dc;
     border-radius: 0.5rem;
     font-family: inherit;
     font-weight: inherit;
     color: #2e2e2e;
     outline: none;
-    padding: 2 1.25rem;
+    padding: 1.25rem;
     background: none;
+    font-size: 12px;
   }
   .form__inputs:hover {
     border-color: #fff99e;
@@ -584,6 +585,7 @@ header label {
     border-color: #e5ad34;
   }
   .form__labels {
+    font-size: 12px;
     position: absolute;
     left: 1rem;
     top: 0.9rem;
@@ -595,17 +597,19 @@ header label {
 
   .form__textarea{
     width: 100%;
-    height: 100px;
+    height: 6rem;
     border: 2px solid #cfd8dc;
     border-radius: 0.5rem;
     font-family: inherit;
     font-weight: inherit;
     color: #2e2e2e;
     outline: none;
-    padding: 2 1.25rem;
+    padding: 1.25rem;
+    bottom: 20px; 
     background: none;
     resize: none;
     overflow: auto;
+    max-height: 330px;
   }
   /* 
   1. When the input is in the focus state
@@ -617,7 +621,7 @@ header label {
   .form__inputs:not(:placeholder-shown).form__inputs:not(:focus) ~ .form__labels {
     top: -0.5rem;
     left: 0.8rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #cc8100;
   }
 
@@ -626,7 +630,7 @@ header label {
   .form__textarea:not(:placeholder-shown).form__textarea:not(:focus) ~ .form__labels {
     top: -0.5rem;
     left: 0.8rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #cc8100;
   }
 
@@ -646,31 +650,44 @@ header label {
 }
 
 .contact .image img {
-    width: 70%;
+    width: 80%;
     padding: 2rem;
 }
 
 .contact form {
     flex: 1 1 35rem;
-    padding: 15rem 4rem;
+    padding: 80px 60px;
     border: .1rem solid rgba(0, 0, 0, .2);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     border-radius: .5rem;
     background: #fff;
 }
 
+.heading__contact {
+    text-align: center;
+    background: var(--gradient);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+
+}
+.contact form .heading__contact {
+    text-align: left;
+    padding-bottom: .5rem;
+}
 .contact form .heading {
     text-align: left;
     padding: 0;
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
 }
 
 .contact form .inputBox {
     position: absolute;
 }
 
-.contact form .inputBox input,
-.contact form .inputBox textarea {
+.contact form .inputBox input{
     width: 100%;
     background: none;
     color: #666;
@@ -681,10 +698,6 @@ header label {
     text-transform: none;
 }
 
-.contact form .inputBox textarea {
-    resize: none;
-    height: 13rem;
-}
 
 .contact form .inputBox label {
     position: absolute;
@@ -696,9 +709,7 @@ header label {
 }
 
 .contact form .inputBox input:focus~label,
-.contact form .inputBox input:valid~label,
-.contact form .inputBox textarea:focus~label,
-.contact form .inputBox textarea:valid~label {
+.contact form .inputBox input:valid~label{
     top: -.5rem;
     font-size: 1.5rem;
     color: var(--pink);

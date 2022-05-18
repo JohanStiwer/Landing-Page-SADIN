@@ -281,6 +281,17 @@ reduce the size of the label and move upwards
   font-size: 0.8rem;
   color: #cc8100;
 }
+
+
+.only__link{
+  text-decoration: none;
+  color: #0079eb;
+}
+
+.only__link:hover{
+  text-decoration: underline;
+  color: #0057a8;
+}
 /* ANIMATION */
 
 .container.sign-up-mode:before {
