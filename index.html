@@ -75,7 +75,8 @@
         <img src="recursos/Acerca de landing.svg" alt="know">
       </div>
       <div class="content">
-        <p>Tú certificado laboral de una manera fácil, rapída y eficiente gracias a SADÍN</p>
+        <p>Tú certificado laboral de una manera fácil, rapída y eficiente.</p>
+        <br>
         <p>Sadin certificados es una aplicación de software a medida que automatiza y acelera procesos gracias a la
           tecnología y la programación. Nos dedicamos a ver oportunidades de mejora donde otros ven problemas. </p>
       </div>
@@ -101,7 +102,9 @@
         </div>
         <img src="recursos/users.svg" alt="group">
         <h3>Usuarios</h3>
-        <p> Los usuarios, determinados funcionarios o administradores tienen varias funcionalidades, entre ellas están registrar, actualizar y eliminar información relacionada con los empleados. Por otro lado los usuarios externos van a poder solicitar certificados laborales generados inmediatamente.</p>
+        <p> Los usuarios, determinados funcionarios o administradores tienen varias funcionalidades, entre ellas están
+          registrar, actualizar y eliminar información relacionada con los empleados. Por otro lado los usuarios
+          externos van a poder solicitar certificados laborales generados inmediatamente.</p>
       </div>
 
       <div class="box">
@@ -137,8 +140,9 @@
       <div class="functions">
         <ul>
           <li><i class="fas fa-check"></i> Carga masiva de datos apartir de los registros de la compañia. </li>
-          <li><i class="fas fa-check"></i> Almacenar la información de forma más segura.</li>
-
+          <li><i class="fas fa-check"></i> Generador de claves para empleados antiguos. </li>
+          <li><i class="fas fa-check"></i> Capacidad de editar datos de manera eficiente. </li>
+          <li><i class="fas fa-check"></i> Permite actualizar el contrato de manera rápida.</li>
           <li><i class="fas fa-check"></i> Descargar certificado de tu preferencia desde la página web. </li>
         </ul>
       </div>
@@ -152,21 +156,25 @@
 
   <!-- pricing section starts  -->
 
-  <section class="aboutVentajas" id="pricing">
+  <section class="aboutSadinCertificados" id="review">
 
     <h1 class="heading"> Ventajas </h1>
 
     <div class="column">
-      <div class="imageventaja">
+
+      <div class="imageAbout">
         <img src="recursos/ventajas.svg" alt="funtion">
       </div>
 
       <div class="functions">
         <ul>
-          <li><i class="fas fa-check"></i> Agilidad para obtener certificados </li>
-          <li><i class="fas fa-check"></i> Mejora del medio ambiente al no imprimir papel.</li>
-         
-          <li><i class="fas fa-check"></i> Validez legal de nuestros certificados.</li>
+          <li><i class="fas fa-check"></i> Aumentará la seguridad de la empresa haciendo la información más personal.
+          </li>
+          <li><i class="fas fa-check"></i> Mejora del medio ambiente al no imprimir papel. </li>
+          <li><i class="fas fa-check"></i> Validez legal de nuestros certificados. </li>
+          <li><i class="fas fa-check"></i> Ágilidad para obtener certificado.</li>
+          <li><i class="fas fa-check"></i> Aumento en la productivad del área recursos humanos.</li>
+          <li><i class="fas fa-check"></i> Fácil interacción para los usuarios. </li>
 
         </ul>
       </div>
@@ -180,6 +188,7 @@
 
   <!-- contact section starts  -->
 
+
   <section class="contact" id="contact">
 
     <div class="image">
@@ -188,33 +197,34 @@
 
     <form action="">
 
-      <h1 class="heading">Contacto</h1>
+      <h1 class="heading__contact">Contacto</h1>
 
-      <div class="inputBox">
-        <input type="text" required>
-        <label>Nombre</label>
+      <div class="form__groups">
+        <input type="text" id="name" class="form__inputs" placeholder=" " autocomplete="off">
+        <label for="name" class="form__labels">Nombre</label>
       </div>
 
-      <div class="inputBox">
-        <input type="email" required>
-        <label>Correo Electrónico</label>
+      <div class="form__groups">
+        <input type="text" id="email" class="form__inputs" placeholder=" " autocomplete="off">
+        <label for="email" class="form__labels">Correo Electrónico</label>
       </div>
 
-      <div class="inputBox">
-        <input type="number" required>
-        <label>Teléfono</label>
+      <div class="form__groups">
+        <input type="text" id="phone" class="form__inputs" placeholder=" " autocomplete="off">
+        <label for="phone" class="form__labels">Teléfono</label>
       </div>
 
-      <div class="inputBox">
-        <textarea required name="" id="" cols="30" rows="10"></textarea>
-        <label>Mensaje</label>
+      <div class="form__groups">
+        <textarea type="text" id="message" class="form__textarea" placeholder=" " autocomplete="off"></textarea>
+        <label for="message" class="form__labels">Mensaje</label>
+        
+        <input type="submit" class="btn" value="Enviar">
       </div>
-
-      <input type="submit" class="btn" value="Enviar">
 
     </form>
 
   </section>
+
 
   <!-- contact section edns -->
 
@@ -229,7 +239,7 @@
       Todos los derechos reservados</p>
   </footer>
   <!-- footer section ends -->
-
+  
 </body>
 
 </html>

@@ -76,26 +76,7 @@ form.sign-in-form {
   margin-bottom: 10px;
 }
 
-.input-field {
-  max-width: 380px;
-  width: 100%;
-  background-color: #f0f0f0;
-  margin: 10px 0;
-  height: 55px;
-  border-radius: 55px;
-  display: grid;
-  grid-template-columns: 15% 85%;
-  padding: 0 0.4rem;
-  position: relative;
-}
 
-.input-field i {
-  text-align: center;
-  line-height: 55px;
-  color: #acacac;
-  transition: 0.5s;
-  font-size: 1.1rem;
-}
 
 .homePage{
   font-size: 13px;
@@ -107,20 +88,8 @@ form.sign-in-form {
   color: #005fa8;
   text-decoration: underline;
   }
-.input-field input {
-  background: none;
-  outline: none;
-  border: none;
-  line-height: 1;
-  font-weight: 600;
-  font-size: 1.1rem;
-  color: #333;
-}
 
-.input-field input::placeholder {
-  color: #aaa;
-  font-weight: 500;
-}
+
 
 .social-text {
   padding: 0.7rem 0;
@@ -252,6 +221,77 @@ form.sign-in-form {
   transform: translateX(800px);
 }
 
+/* FORMULARIOS */
+.form {
+  width: 24rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+.form__title {
+  margin-bottom: 0.5rem;
+}
+.form__description {
+  margin-bottom: 2rem;
+}
+.form__group {
+  position: relative;
+  height: 3rem;
+  margin-bottom: 1.5rem;
+}
+.form__input {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #cfd8dc;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  font-weight: inherit;
+  color: #2e2e2e;
+  outline: none;
+  padding: 1.25rem;
+  background: none;
+}
+.form__input:hover {
+  border-color: #fff99e;
+}
+.form__input:focus {
+  border-color: #e5ad34;
+}
+.form__label {
+  position: absolute;
+  left: 1rem;
+  top: 0.9rem;
+  padding: 0 0.5rem;
+  background-color: white;
+  color: #8f8f8f;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+}
+
+
+/* 
+1. When the input is in the focus state
+reduce the size of the label and move upwards 
+
+2. Keep label state when content is in input field 
+*/
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+  top: -0.5rem;
+  left: 0.8rem;
+  font-size: 0.8rem;
+  color: #cc8100;
+}
+
+
+.only__link{
+  text-decoration: none;
+  color: #0079eb;
+}
+
+.only__link:hover{
+  text-decoration: underline;
+  color: #0057a8;
+}
 /* ANIMATION */
 
 .container.sign-up-mode:before {
